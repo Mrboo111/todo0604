@@ -1,9 +1,10 @@
 import "tailwindcss"
 function Greeting(props) {
-    const {name,greet} = props
+    console.log(Greeting)
+    const {name,greet,onclick} = props
   return (
     <>
-      <p className="font-bold text-blue-500">{name}さん、{greet}</p>
+      <p onClick={()=>onclick()} className="font-bold text-blue-500">{name}さん、{greet}</p>
     </>
   )
 }
